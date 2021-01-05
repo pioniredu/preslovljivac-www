@@ -1,0 +1,23 @@
+{
+  "name": "preslovljivac-www",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pioniredu/preslovljivac-www.git"
+  },
+  "author": "Rada Trajkovski",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/pioniredu/preslovljivac-www/issues"
+  },
+  "homepage": "https://github.com/pioniredu/preslovljivac-www#readme",
+  "dependencies": {
+    "@pionir/preslovljivac": "^3.0.2",
+    "es-module-shims": "^0.7.1"
+  }
+}
