@@ -67,7 +67,7 @@
   border: 0;
   resize: none;
   padding: 24px 24px 48px 24px;
-  box-sizing: border-box;
+
 }
 
 #preslovljeni {
@@ -86,7 +86,7 @@
   border: 0;
   resize: none;
   color: #101b56;
-  box-sizing: border-box;
+
 }
 
 #preslovi::placeholder {
