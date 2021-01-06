@@ -1,0 +1,90 @@
+#telo{
+  color: #101B56;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+}
+.red {
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 100px 1fr 1fr 200px 200px;
+    grid-template: "logo presl bc bc bc bc izvorni opresl";
+    background-color: #514b96;
+    text-align: center;
+    width: 100%;
+    height: 56px;
+  }
+
+#logo {
+  grid-area: logo;
+  justify-items: start;
+  align-self: center;
+  float: right;
+  position: absolute;
+  width: 32px;
+  height: 16px;
+  left: 36px;
+}
+#presl {
+  grid-area: presl;
+  float: right;
+  position: absolute;
+  width: 142px;
+  left: 80px;
+  height: 23px;
+  font-size: 20px;
+  text-align: center;
+  
+}
+#ik {
+  float: left;
+  position: absolute;
+  right: 260px;
+  font-size: 16px;
+  
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  color: white;
+  grid-area: izvorni;
+  display: block;
+  height: 19px;
+  width: 137px;
+}
+#opr {
+  float: left;
+  position: absolute;
+  display: block;
+  width: 137px;
+  height: 16px;
+  right: 48px;
+  color: white;
+  grid-area: opresl;
+  font-size: 16px;
+  text-align: center;
+}
+.kolona {
+  background-color: white;
+  width: 100%;
+  height:100vh;
+  text-align: center;
+  display: grid;
+  font-size: 16px;
+}
+#naslov {
+  font-size:48px;
+  height: 56px;
+  width: 343px;
+  color: #101b56;
+  top: 154px;
+  bottom: 1157px;
+  left: 622px;  
+  right: 475px;
+  display: inline-block;
+  justify-self: center;
+}
+a {
+  color: #714BAF;
+}
+#pionir{
+   justify-self: center;
+}

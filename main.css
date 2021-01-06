@@ -9,8 +9,14 @@
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  white-space: nowrap;
+  font-family: "Inter", sans-serif;
 }
-
+#rada{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .red {
   color: white;
   display: grid;
@@ -23,26 +29,27 @@
 }
 #logo {
   grid-area: logo;
-  justify-items: start;
   align-self: center;
   float: left;
   position: absolute;
   left: 24px;
   width: 32px;
   height: 16px;
+  align-self: flex-start;
 }
 #presl {
+ justify-self: center;
   grid-area: presl;
   float: right;
-  position: absolute;
+  position: relative;
   width: 142px;
   left: 92px;
   width: 142px;
   left: 80px;
   height: 23px;
   font-size: 20px;
-  text-align: center;
-  font-family: Roboto;
+  align-self: flex-end;
+ 
 }
 .kolone {
   flex: auto;
@@ -57,7 +64,6 @@
   grid-area: kolona;
   background-color: #e5e5e5;
   color: #101b56;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -67,7 +73,6 @@
   border: 0;
   resize: none;
   padding: 24px 24px 48px 24px;
-
 }
 
 #preslovljeni {
@@ -75,7 +80,7 @@
   grid-area: kolonadruga;
   background-color: white;
   color: #b1accf;
-  font-family: Roboto;
+
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -86,7 +91,6 @@
   border: 0;
   resize: none;
   color: #101b56;
-
 }
 
 #preslovi::placeholder {
@@ -143,14 +147,12 @@
     height: 23px;
     font-size: 20px;
     text-align: center;
-    font-family: Roboto;
   }
   #ik {
     float: left;
     position: absolute;
     right: 260px;
     font-size: 16px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     line-height: 19px;
@@ -177,7 +179,7 @@
     grid-area: kolona;
     background-color: #e5e5e5;
     color: #101b56;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -195,7 +197,7 @@
     grid-area: kolonadruga;
     background-color: white;
     color: #101b56;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -214,7 +216,7 @@
     left: 583px;
     top: 973px;
     display: block;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -228,7 +230,7 @@
     height: 25px;
     left: 600px;
     top: 1000px;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
