@@ -12,7 +12,7 @@
   white-space: nowrap;
   font-family: "Inter", sans-serif;
 }
-#rada{
+#rada {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,18 +38,17 @@
   align-self: flex-start;
 }
 #presl {
- justify-self: center;
+  /*justify-self: center;*/
   grid-area: presl;
-  float: right;
-  position: relative;
-  width: 142px;
+  /*position: absolute;*/
+  text-align: center;
+  /*width: 142px;
   left: 92px;
   width: 142px;
   left: 80px;
-  height: 23px;
+  height: 23px;*/
   font-size: 20px;
-  align-self: flex-end;
- 
+ /* align-self: flex-end;*/
 }
 .kolone {
   flex: auto;
@@ -104,7 +103,11 @@
   display: none;
 }
 
-@media (min-width: 600px) {
+.fontSize{
+  font-size: 24px !important;
+}
+
+@media screen and (min-width: 600px) {
   .red {
     color: white;
     display: grid;
@@ -120,6 +123,7 @@
     grid-template: "kolona  kolonadruga";
     color: white;
     height: 100vh;
+    position: relative;
   }
   #telo {
     height: 100vh;
@@ -137,16 +141,6 @@
     width: 32px;
     height: 16px;
     left: 36px;
-  }
-  #presl {
-    grid-area: presl;
-    float: right;
-    position: absolute;
-    width: 142px;
-    left: 80px;
-    height: 23px;
-    font-size: 20px;
-    text-align: center;
   }
   #ik {
     float: left;
@@ -174,12 +168,10 @@
     font-size: 16px;
     text-align: center;
   }
-
   #preslovi {
     grid-area: kolona;
     background-color: #e5e5e5;
     color: #101b56;
-
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -188,6 +180,8 @@
     height: 100%;
     border: 0;
     resize: none;
+    position: relative;
+    padding-right: 57px;
   }
   #preslovi::placeholder {
     color: #b1accf;
@@ -197,7 +191,6 @@
     grid-area: kolonadruga;
     background-color: white;
     color: #101b56;
-
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -207,6 +200,36 @@
     height: 100%;
     border: 0;
     resize: none;
+    position: relative;
+    padding-right: 59px;
+  }
+  .relative {
+    position: relative;
+  }
+  #btnCopy {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    appearance: none;
+    float: inline-end;
+    border: 0;
+    background-color: white;
+    display: none;
+    cursor: pointer;
+  }
+  #btnDelete {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    float: inline-end;
+    border: 0;
+    appearance: none;
+    background-color: #e5e5e5;
+    display: none;
+    cursor: pointer;
+  }
+  .show{
+    display: block !important;
   }
   #brojac {
     grid-area: kolona;
