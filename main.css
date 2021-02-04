@@ -35,9 +35,9 @@
   left: 24px;
   width: 32px;
   height: 16px;
-  align-self: flex-start;
 }
 #presl {
+  float: left;
   /*justify-self: center;*/
   grid-area: presl;
   /*position: absolute;*/
@@ -106,7 +106,6 @@
 .fontSize{
   font-size: 24px !important;
 }
-
 @media screen and (min-width: 600px) {
   .red {
     color: white;
@@ -234,30 +233,74 @@
   #brojac {
     grid-area: kolona;
     position: absolute;
-    width: 97px;
-    height: 25px;
-    left: 583px;
-    top: 973px;
-    display: block;
-
+    bottom: 32px;
+    right: 32px;
+    float: left;
     font-style: normal;
-    font-weight: bold;
     font-size: 19px;
     line-height: 14px;
     color: #101b56;
+    display: none;
   }
   #reci {
     grid-area: kolona;
     position: absolute;
-    width: 55px;
-    height: 25px;
-    left: 600px;
-    top: 1000px;
-
     font-style: normal;
-    font-weight: bold;
+    right: 250px;
+    bottom: 32px;
+    float: left;
     font-size: 19px;
     line-height: 14px;
     color: #101b56;
+    display: none;
   }
+#cir{
+  grid-area:kolona;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #101b56;
+  float: right;
+  display: none;
+}
+#lat{
+  grid-area:kolonadruga;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #101b56;
+  float: right;
+  display: none;
+}
+#brojac1 {
+  grid-area: kolonadruga;
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  float: left;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 14px;
+  color: #101b56;
+  display: none;
+}
+#reci1 {
+  grid-area: kolonadruga;
+  position: absolute;
+  font-style: normal;
+  right: 250px;
+   bottom: 32px;
+  float: left;
+  font-size: 19px;
+  line-height: 14px;
+  color: #101b56;
+  display: none;
+}
+/*broj reči: */
 }
