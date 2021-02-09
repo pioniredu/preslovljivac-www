@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .red {
   color: white;
@@ -58,6 +59,7 @@
     "kolona"
     "kolonadruga";
   color: white;
+  position: relative;
 }
 #preslovi {
   grid-area: kolona;
@@ -72,6 +74,8 @@
   border: 0;
   resize: none;
   padding: 24px 24px 48px 24px;
+  position: relative;
+  padding-right: 57px;
 }
 
 #preslovljeni {
@@ -79,7 +83,6 @@
   grid-area: kolonadruga;
   background-color: white;
   color: #b1accf;
-
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -90,6 +93,8 @@
   border: 0;
   resize: none;
   color: #101b56;
+  position: relative;
+  padding-right: 57px;
 }
 
 #preslovi::placeholder {
@@ -105,6 +110,104 @@
 
 .fontSize{
   font-size: 24px !important;
+}
+#btnCopy {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+
+  appearance: none;
+  float: inline-end;
+  border: 0;
+  background-color: white;
+  display: none;
+  cursor: pointer;
+}
+#btnDelete {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  float: inline-end;
+  border: 0;
+  appearance: none;
+  background-color: #e5e5e5;
+  display: none;
+  cursor: pointer;
+}
+.show{
+  display: block !important;
+}
+#brojac {
+  grid-area: kolona;
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  float: left;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 14px;
+  color: #101b56;
+  display: none;
+}
+#reci {
+  grid-area: kolona;
+  position: absolute;
+  font-style: normal;
+  right: 200px;
+  bottom: 32px;
+  float: left;
+  font-size: 19px;
+  line-height: 14px;
+  color: #101b56;
+  display: none;
+}
+#cir{
+grid-area:kolona;
+position: absolute;
+bottom: 32px;
+left: 32px;
+font-size: 19px;
+font-weight: bold;
+line-height: 14px;
+color: #101b56;
+float: right;
+display: none;
+}
+#lat{
+grid-area:kolonadruga;
+position: absolute;
+bottom: 32px;
+left: 32px;
+font-size: 19px;
+font-weight: bold;
+line-height: 14px;
+color: #101b56;
+float: right;
+display: none;
+}
+#brojac1 {
+grid-area: kolonadruga;
+position: absolute;
+bottom: 32px;
+right: 32px;
+float: left;
+font-style: normal;
+font-size: 19px;
+line-height: 14px;
+color: #101b56;
+display: none;
+}
+#reci1 {
+grid-area: kolonadruga;
+position: absolute;
+font-style: normal;
+right: 200px;
+ bottom: 32px;
+float: left;
+font-size: 19px;
+line-height: 14px;
+color: #101b56;
+display: none;
 }
 @media screen and (min-width: 600px) {
   .red {
