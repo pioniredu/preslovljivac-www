@@ -114,8 +114,7 @@
 #btnCopy {
   position: absolute;
   right: 32px;
-  top: 32px;
-
+  top: 360px;
   appearance: none;
   float: inline-end;
   border: 0;
