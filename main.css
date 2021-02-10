@@ -118,7 +118,7 @@
   appearance: none;
   float: inline-end;
   border: 0;
-  background-color: white;
+  background-color: rgb(43, 36, 36);
   display: none;
   cursor: pointer;
 }
