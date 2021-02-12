@@ -24,17 +24,22 @@
   height: 16px;
   left: 36px;
 }
-#presl {
+#presl  {
   grid-area: presl;
   float: right;
   position: absolute;
   width: 142px;
-  left: 80px;
+  left: 32px;
   height: 23px;
   font-size: 20px;
   text-align: center;
-  
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  top: 13px;
 }
+
+
 #ik {
   float: left;
   position: absolute;

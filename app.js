@@ -9,6 +9,7 @@ let cir = document.getElementById("cir");
 let lat = document.getElementById("lat");
 let broj = document.getElementById("reci");
 let broj1 = document.getElementById("reci1");
+let tackice=document.getElementById("tackice")
 
 btnCopy.addEventListener("click", (event) => {
   presl = document.getElementById("preslovljeni");
@@ -25,8 +26,8 @@ txt.addEventListener("keyup", function (e) {
     txt1.value = preslovljeno;
     let karakteri = e.target.value.split("");
     let karakteri1 =txt1.value.split("");
-    slova.innerText = "број карактера:" + karakteri.length;
-    slova1.innerText = "број карактера:" + karakteri1.length;
+    slova.innerText = "Карактера: " + karakteri.length;
+    slova1.innerText = "Карактера:" + karakteri1.length;
     let text = txt.value;
     let numWords = 0;
     for (let i = 0; i < text.length; i++) {
@@ -35,14 +36,15 @@ txt.addEventListener("keyup", function (e) {
         numWords += 1;
       }
     }
-    reci.innerText = "број речи:" + numWords;
-    reci1.innerText = "број речи:" + numWords;
+    reci.innerText = "Речи: " + numWords;
+    reci1.innerText = "Речи: " + numWords;
     slova.classList.add("show");
     slova1.classList.add("show");
     cir.classList.add("show");
     lat.classList.add("show");
     reci.classList.add("show");
     reci1.classList.add("show");
+  
   } else {
     btnCopy.classList.remove("show");
     btnDelete.classList.remove("show");
@@ -52,6 +54,7 @@ txt.addEventListener("keyup", function (e) {
     lat.classList.remove("show");
     reci.classList.remove("show");
     reci1.classList.remove("show");
+   
   }
 });
 
@@ -66,6 +69,7 @@ btnDelete.addEventListener("click", function () {
   lat.classList.remove("show");
   reci.classList.remove("show");
   reci1.classList.remove("show");
+ 
 });
 
 txt.addEventListener("keyup", (event) => {
