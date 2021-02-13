@@ -35,7 +35,7 @@
 }
 #presl {
   left: 30px;
-  top: 13px;
+  top: 16px;
   position: absolute;
   justify-self: center;
   grid-area: presl;
@@ -52,12 +52,7 @@
   cursor: pointer;
   border:none;
 }
-#meni{
-  display: none;
-}
-#presl{
-  text-decoration: none;
-}
+
 .kolone {
   flex: auto;
   flex-grow: 1;
@@ -241,9 +236,9 @@ grid-area: kolonadruga;
 
 
   #ik {
-    float: left;
+    /*float: left;*/
     position: absolute;
-    right: 260px;
+    right: 175px;
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
@@ -253,14 +248,15 @@ grid-area: kolonadruga;
     display: block;
     height: 19px;
     width: 137px;
+    text-decoration: none;
+    top: 16px;
   }
   #opr {
-    float: left;
     position: absolute;
     display: block;
     width: 137px;
-  
    top: 16px;
+
    bottom: 16px ;
     right: 32px;
     color: white;
