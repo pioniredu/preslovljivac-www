@@ -9,8 +9,16 @@ let cir = document.getElementById("cir");
 let lat = document.getElementById("lat");
 let broj = document.getElementById("reci");
 let broj1 = document.getElementById("reci1");
-let tackice=document.getElementById("tackice")
-
+let btn=document.getElementById("btn");
+let content=document.getElementById("dropdown-content");
+btn.addEventListener("click",()=>{
+  if(content.style.display===""){
+    content.classList.add("show");
+ } else {
+  content.classList.remove("show");
+ }
+ 
+});
 btnCopy.addEventListener("click", (event) => {
   presl = document.getElementById("preslovljeni");
   presl.select();
@@ -54,7 +62,8 @@ txt.addEventListener("keyup", function (e) {
     lat.classList.remove("show");
     reci.classList.remove("show");
     reci1.classList.remove("show");
-   
+    content.classList.remove("show");
+    
   }
 });
 
@@ -69,6 +78,8 @@ btnDelete.addEventListener("click", function () {
   lat.classList.remove("show");
   reci.classList.remove("show");
   reci1.classList.remove("show");
+  content.classList.remove("show");
+
  
 });
 
@@ -81,5 +92,7 @@ txt.addEventListener("keyup", (event) => {
   } else {
     txt.classList.remove("fontSize");
     txt1.classList.remove("fontSize");
+    content.classList.remove("show")
   }
 });
+

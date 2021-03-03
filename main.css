@@ -17,14 +17,15 @@
 .red {
   color: white;
   display: grid;
-  grid-template-columns: 100px 100px 1fr 1fr 100px 1fr;
-  grid-template: "logo presl bc bc bc bc ik";
+  grid-template-columns: 100px 1fr 40px;
+  grid-template: "presl presl ik";
   background-color: #514b96;
   text-align: center;
   width: 100vh;
   height: 56px;
+  
 }
-#logo {
+/*#logo {
   grid-area: logo;
   align-self: center;
   float: left;
@@ -32,7 +33,7 @@
   left: 24px;
   width: 32px;
   height: 16px;
-}
+}*/
 #presl {
   left: 30px;
   top: 16px;
@@ -42,17 +43,46 @@
   text-align: center;
   font-size: 20px;
 }
-#tackice{
-  top: 13px;
-  right: 28px;
-  grid-area:ik;
+.dropdown {
+  display: inline-block;
+}
+#btn {
+  position: absolute;
+  border: none;
   background-color: transparent;
-  position:absolute;
   appearance: none;
   cursor: pointer;
-  border:none;
+  top: 13px;
+  right: 30px;
+  grid-area: ik;
+  
 }
-
+#dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  width: 200px;
+  z-index: 1;
+  left: auto;
+  right: 42%;
+  top: 35px;
+}
+.visibility{
+  visibility: visible !important;
+}
+#dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+*/
 .kolone {
   flex: auto;
   flex-grow: 1;
@@ -118,7 +148,7 @@
   right: 32px;
   top: 32px;
   appearance: none;
-grid-area: kolonadruga;
+  grid-area: kolonadruga;
   border: 0;
   background-color: transparent;
   display: none;
@@ -209,6 +239,7 @@ grid-area: kolonadruga;
   color: #101b56;
   display: none;
 }
+
 @media screen and (min-width: 600px) {
   .red {
     color: white;
@@ -234,7 +265,6 @@ grid-area: kolonadruga;
     margin: 0;
   }
 
-
   #ik {
     /*float: left;*/
     position: absolute;
@@ -255,16 +285,15 @@ grid-area: kolonadruga;
     position: absolute;
     display: block;
     width: 137px;
-   top: 16px;
+    top: 16px;
 
-   bottom: 16px ;
+    bottom: 16px;
     right: 32px;
     color: white;
     grid-area: opresl;
     font-size: 16px;
     text-align: center;
-    text-decoration: none; 
-  
+    text-decoration: none;
   }
   #preslovi {
     grid-area: kolona;
@@ -400,8 +429,7 @@ grid-area: kolonadruga;
     color: #101b56;
     display: none;
   }
-  #tackice {
+ #btn {
     display: none;
   }
-
 }

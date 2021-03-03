@@ -30,25 +30,28 @@
 		<div>
 			<a href="opreslovljivacu.html" id="opr"  target="_blank">O Пресловљивачу</a>
 		</div>
-		<div>
-			<button id="tackice"> <img src="tackice.png"></button>
-		</div>
-	
+		<div class="dropdown">
+			<button  id="btn"><img src="tackice.png"></button>
+			<div id="dropdown-content">
+			  <a href="opreslovljivacu.html">O Пресловљивачу</a>
+			  <a href="//github.com/pioniredu/preslovljivac-www">Изворни код</a>
+			</div>
+		  </div>	
 	</div>
 	<div class="kolone">
 		<div class="relative"> 
 			<textarea placeholder="Унеси текст за преслов овде" id="preslovi"></textarea>
 			<button id="btnDelete"><img alt="delete" src="clear.png"></button>
-			<div id="reci">речи</div>
+			<div id="reci"></div>
 			<div id="brojac"></div>
 			<div id="cir">ЋИРИЛИЦА</div>
 		</div>
 		<div class="relative">
 			<textarea placeholder="Пресловљени текст ће се исписати овде" id="preslovljeni"></textarea>
 			<button id="btnCopy"><img alt="copy" src="Vector.png"></button>
-			<div id="reci1">речи</div>
+			<div id="reci1"></div>
 			<div id="brojac1"></div>
-			<div id="lat">ЛАТИНИЦА	</div>
+			<div id="lat">ЛАТИНИЦА</div>
 		</div>
 	</div>
 </body>
