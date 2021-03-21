@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" id="theme-link" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="./node_modules/es-module-shims/dist/es-module-shims.min.js"
+    ></script>
+    <script type="importmap-shim">
+      {
+        "imports": {
+      	"@pionir/preslovljivac-js": "./node_modules/@pionir/preslovljivac/main.js",
+      	"@pionir/detektor-js": "./node_modules/@pionir/detektor-js/main.mjs"
+        }
+      }
+    </script>
+    <script type="module-shim" src="./app.js"></script>
+  </head>
 
-	<title></title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="main.css">
-	<link  rel="stylesheet" href="normalize.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
-	<script defer src="./node_modules/es-module-shims/dist/es-module-shims.min.js"></script>
-	<script type="importmap-shim">
-		{
-		  "imports": {
-			"@pionir/preslovljivac-js": "./node_modules/@pionir/preslovljivac/main.js",
-			"@pionir/detektor-js": "./node_modules/@pionir/detektor-js/main.mjs"
-		  }
-		}
-		</script>
-	<script type="module-shim" src="./app.js"></script>
-	
-</head>
-
-<body id="telo">
-	<div class="red">
-	<div id="presl"> Пресловљивач</div>
-	<div>
-		<a href="//github.com/pioniredu/preslovljivac-www" id="ik"  target="_blank"> Изворни код</a>
-	</div>
-		<div>
-			<a href="opreslovljivacu.html" id="opr"  target="_blank">O Пресловљивачу</a>
-		</div>
-		<div class="dropdown">
-			<button  id="btn"><img src="tackice.png"></button>
-			<div id="dropdown-content">
-			  <a href="opreslovljivacu.html">O Пресловљивачу</a>
-			  <a href="//github.com/pioniredu/preslovljivac-www">Изворни код</a>
-			</div>
-		  </div>	
-	</div>
-	<div class="kolone">
-		<div class="relative"> 
-			<textarea placeholder="Унеси текст за преслов овде" id="preslovi"></textarea>
-			<button id="btnDelete"><img alt="delete" src="clear.png"></button>
-			<div id="reci"></div>
-			<div id="brojac"></div>
-			<div id="cir">ЋИРИЛИЦА</div>
-		</div>
-		<div class="relative">
-			<textarea placeholder="Пресловљени текст ће се исписати овде" id="preslovljeni"></textarea>
-			<button id="btnCopy"><img alt="copy" src="Vector.png"></button>
-			<div id="reci1"></div>
-			<div id="brojac1"></div>
-			<div id="lat">ЛАТИНИЦА</div>
-		</div>
-	</div>
-</body>
+  <body id="telo">
+    <div class="red" id="red1">
+      <div id="presl">Пресловљивач</div>
+      <div>
+        <a
+          href="//github.com/pioniredu/preslovljivac-www"
+          id="ik"
+          target="_blank"
+        >
+          Изворни код</a
+        >
+      </div>
+      <div>
+        <a href="opreslovljivacu.html" id="opr" target="_blank"
+          >O Пресловљивачу</a
+        >
+      </div>
+      <div class="dropdown">
+        <button id="btn"><img src="more.svg" /></button>
+        <div id="dropdown-content">
+          <a href="opreslovljivacu.html">O Пресловљивачу</a>
+          <a href="//github.com/pioniredu/preslovljivac-www">Изворни код</a>
+        </div>
+      </div>
+      <label class="switch">
+		<input type="checkbox" id="box">
+      </label>
+    </div>
+    <div class="kolone">
+      <div class="relative">
+        <textarea
+          placeholder="Унеси текст за преслов овде"
+          id="preslovi"
+        ></textarea>
+        <button id="btnDelete"><img alt="delete" src="clear.svg" ></button>
+        <div id="reci"></div>
+        <div id="brojac"></div>
+        <div id="cir">ЋИРИЛИЦА</div>
+      </div>
+      <div class="relative">
+        <textarea
+          placeholder="Пресловљени текст ће се исписати овде"
+          id="preslovljeni"
+        ></textarea>
+        <button id="btnCopy"><img alt="copy" src="copy.svg" /></button>
+        <div id="reci1"></div>
+        <div id="brojac1"></div>
+        <div id="lat">ЛАТИНИЦА</div>
+      </div>
+    </div>
+  </body>
 </html>

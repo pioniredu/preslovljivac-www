@@ -12,6 +12,7 @@
   white-space: nowrap;
   font-family: "Inter", sans-serif;
   position: relative;
+  outline: none;
 }
 
 .red {
@@ -147,6 +148,7 @@
   background-color: transparent;
   display: none;
   cursor: pointer;
+  
 }
 .show {
   display: block !important;
@@ -415,4 +417,83 @@
  #btn {
     display: none;
   }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #514b96;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid white;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color:white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#101b56;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px white;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  @media screen and (prefers-color-scheme: dark) {
+    .red {
+     background-color: #150621;
+     color: white;
+    }
+    #preslovi {
+      background-color:#1F0A3C;
+      color: white;
+    }
+    #preslovljeni {
+      background-color: #281245;
+      color: white;
+    }
+  }
+ .darkfont { 
+  color: white !important;
+}
+.dark1{
+  background-color: #150621  !important;/*red*/
+}
+.dark2{
+  background-color: #1F0A3C !important; /*preslovi*/
+  color: white  !important;
+}
+.dark3{
+  background-color: #281245  !important;/*preslovljeni*/
+  color: white !important;
+}
+/*.fill{
+fill: white !important;
+}*/
 }
